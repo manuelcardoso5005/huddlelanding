@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background:#674baf;
+    max-width: 1440px;
+    min-width: 375px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.body-container {
+    width: 375px;
+    margin: auto;
+    background-size: cover;
+    background: url(bg-mobile.svg) no-repeat;
+    background-position: top center;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 300px;
+    margin: auto;
+}
+
+.header-container img{
+    width: 130px;
+    margin: 30px 0;
+}
+
+.banner-area {
+    margin-top:30px;
+}
+
+.banner-container {
+    width: 300px;
+}
+
+.banner-container img{
+    width: 100%;
+}
+
+.text-container {
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.text-container .container h1 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+}
+
+.text-container p {
+    margin-bottom: 24px;
+    color: rgba(255, 255, 255, 0.692);
+    letter-spacing: 0.5px;
+    font-size: 14px;
+}
+
+.btn-container {
+    margin: auto;
+    width: 190px;
+    padding: 6px 0;
+    background: #fff;
+    border-radius: 25px;
+    text-transform: capitalize;
+}
+
+.btn-container a{
+    color: hsl(257, 40%, 49%);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.footer-container {
+    text-align: center;
+}
+
+.medias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0;
+}
+
+.medias div {
+    margin-right: 10px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.medias div:nth-child(3) {
+    margin-right: 0px;
+}
+
+.medias div a {
+    font-size: 12px;
+}
+
+.medias div i {
+    font-size: 14px;
+    color: #fff;
+}
+
+footer {
+    padding-bottom: 1px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.direita {
+    width: 300px;
+    margin: auto;
+}
+
+@media screen and (min-width:800px) {
+    .body-container {
+        width: 100%;
+        height: 100%;
+        background: url(bg-desktop.svg) no-repeat;
+        background-size: contain; /* A imagem de fundo se ajustará para caber completamente no elemento */
+        background-position: center; /* A imagem será centralizada no elemento */
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .general {
+        width: 90%;
+        margin: auto;
+        height: 100vh;
+        display: flex;
+        
+    }
+
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+
+    .esquerda {
+        width: 60%;
+        height: 100%;
+    }
+
+    .esquerda .container {
+        margin-left: 60px;
+    }
+
+    .header-container img{
+        width: 200px;
+        margin: 50px 0 30px 0;
+    }
+
+    .banner-container img {
+        width: 600px;
+    }
+
+    .direita {
+        width: 40%;
+        height: 100%;
+        padding-left: 10px;
+    }
+
+    .medias {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .text-container {
+        text-align: none;
+        margin-top: 50px;
+    }
+
+    .text-container .container h1 {
+        font-size: 30px;
+    }
+
+    .block {
+        display: none !important;
+    }
+
+    .direita .container h1, .direita .container p {
+        text-align: left;
+    }
+
+    .text-container p {
+        width: 445px;
+    }
+
+    .btn {
+        width: 160px;
+    }
+
+    .btn-container {
+        width: 160px;
+        padding: 10px 0;
+        cursor: pointer;
+    }
+
+    .hov {
+        transition: 0.3s;
+    }
+
+    .hov:hover a {
+        color: #fff;
+    }
+
+    .btn-container:hover {
+        background:hsl(300, 69%, 71%);
+    }
+
+    .medias div {
+        margin-top: 0px;   
+    }
+
+    .medias div:hover {
+        border: 1px solid hsl(300, 69%, 71%);
+    }
+
+    .medias div:hover i {
+        color: hsl(300, 69%, 71%);
+    }
+
+    footer {
+        width: 90%;
+        margin-top: -150px;
+        margin-bottom: 0;
+        position: absolute;
+    }
+}
